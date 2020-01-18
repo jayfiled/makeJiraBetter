@@ -8,22 +8,23 @@ I'll convert this to a Chrome extension eventually as I give the script more fun
 
 ### Installation instructions 📑
 
-To develop the script I used the chrome extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en).
+To develop the script I installed the chrome extension [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en).
 
-- Create a new user script
-- Replace the `\\Your code here...` text with the contents of index.js 
-- Amend the @matches value to be your jira instance
-- Go
+- Create a new user script.
+- Replace the `\\Your code here...` text with the contents of index.js.
+- Amend the **@matches** value to be the URL of your jira instance.
+- Go to the script, then click on the settings tab.  Add a **user includes** rule if you want to use a wildcard to run on a subset of pages, or a **user matches** rule if you want your script to only run on certain pages.
+- Save your script and close to the dashboard.  Make sure your script is enabled and also that the Chrome Extension is set to enabled. 
 
 ### Future features 🏹
-- [] **Add a button to the page to toggle on and off**
-- [] **Add a text parser to remove junk text from jira issues that have been created by email**
+- [ ] **Add a button to the page to toggle on and off**
+- [ ] **Add a text parser to remove junk text from jira issues that have been created by email**
 
 
 ### Improvements 🏃‍♂️💨
-- [] **Make functions deterministic**
+- [ ] **Make functions deterministic**
 
 
 
 ### Pain points 🤕
-- [] **HTMLCollections not being iterable**
+- [ ] **HTMLCollections not being iterable**

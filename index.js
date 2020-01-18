@@ -5,7 +5,8 @@ const descriptionText = [];
 const toolTip = `<div class="cooltip"><span class="cooltiptext"></span></div>`;
 
 const grabDescriptionText = (nextFunction) => {
-    console.log('Copying text from description fields..');
+    console.log('%c Make Jira better UI tweaker log: ', 'color: #bada55');
+    console.log('   👉 Copying text from description fields..');
 
     for (let i = 0; i <= (allDescriptionElements.length - 1); i++){
         descriptionText.push(allDescriptionElements[i].innerText);
@@ -16,7 +17,7 @@ const grabDescriptionText = (nextFunction) => {
 }
 
 const emptyDescriptionElements = (nextFunction) => {
-    console.log('Emptying description elements..');
+    console.log('   👉 Emptying description elements..');
 
     for (let i = 0; i <= (allDescriptionElements.length - 1); i++){
 
@@ -30,7 +31,7 @@ const emptyDescriptionElements = (nextFunction) => {
 
 
 const addToolTipContent = (nextFunction) => {
-    console.log('Adding content to tool tips..', descriptionText);
+    console.log('   👉 Adding content to tool tips..');
 
     for (let i = 0; i <= (allDescriptionElements.length - 1); i++){
 
@@ -39,13 +40,12 @@ const addToolTipContent = (nextFunction) => {
         const toolTipContent = allDescriptionElements[i].firstChild.firstChild;
         toolTipContent.innerText = descriptionText[i];
 
-
     }
     nextFunction();
 }
 
 const styleToolTips = (nextFunction) => {
-    console.log('Styling Tool Tips..');
+    console.log('   👉 Styling Tool Tips..');
 
     const cTipEl = document.getElementsByClassName('cooltip');
     const cTipElText = document.getElementsByClassName('cooltiptext');
@@ -69,7 +69,7 @@ const styleToolTips = (nextFunction) => {
 }
 
 const addListeners = (nextFunction) => {
-    console.log('Adding event listeners to each description field..');
+    console.log('   👉 Adding event listeners to each description field..');
 
     for (let i = 0; i <= (allDescriptionElements.length - 1); i++){
 
@@ -92,7 +92,7 @@ const addListeners = (nextFunction) => {
 }
 
 const reportAfterLastFunctionFinishes = () => {
-    console.log('Description content added to tool tip when you hover over description field!');
+    console.log('   👉 Description content added to tool tip when you hover over description field!');
     }
 
 const runAllTheFunctionsInSync = () => {

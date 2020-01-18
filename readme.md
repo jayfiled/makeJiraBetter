@@ -20,11 +20,8 @@ To develop the script I installed the chrome extension [Tampermonkey](https://ch
 - [ ] **Add a button to the page to toggle on and off**
 - [ ] **Add a text parser to remove junk text from jira issues that have been created by email**
 
-
 ### Improvements 🏃‍♂️💨
 - [ ] **Make functions deterministic**
-
-
 
 ### Pain points 🤕
 - [ ] **HTMLCollections not being iterable**

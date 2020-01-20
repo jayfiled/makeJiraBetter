@@ -13,7 +13,7 @@ To develop the script I installed the chrome extension [Tampermonkey](https://ch
 - Create a new user script.
 - Replace the `\\Your code here...` text with the contents of index.js.
 - Amend the **@matches** value to be the URL of your jira instance.
-- Go to the script, then click on the settings tab.  Add a **user includes** rule if you want to use a wildcard to run on a subset of pages, or a **user matches** rule if you want your script to only run on certain pages.
+- Go to the script, then click on the settings tab.  Add a **user includes** rule if you want to use a wildcard * to run on a subset of pages, or a **user matches** rule if you want your script to only run on certain pages.
 - Save your script and close to the dashboard.  Make sure your script is enabled and also that the Chrome Extension is set to enabled. 
 
 ### Future features 🏹
@@ -22,6 +22,8 @@ To develop the script I installed the chrome extension [Tampermonkey](https://ch
 
 ### Improvements 🏃‍♂️💨
 - [ ] **Make functions deterministic**
+- [ ] **Resize gadgets after script runs to condense them back to normal size**
+- [ ] **Add Z-Index 1 to tooltip to avoid it hiding behind other gadget elements**
 
 ### Pain points 🤕
 - [ ] **HTMLCollections not being iterable**

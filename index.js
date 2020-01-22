@@ -55,6 +55,8 @@ const styleToolTips = (nextFunction) => {
         cTipEl[i].style.display = 'inline-block';
         cTipEl[i].style.borderBottom = 'inline-block';
         cTipEl[i].style.borderBottom = '1px dotted black';
+        cTipEl[i].style.zIndex = '1px dotted black';
+        cTipEl[i].style.zIndex = '1';
     }
 
     for (let i = 0; i <= (cTipElText.length - 1); i++) {
@@ -65,6 +67,13 @@ const styleToolTips = (nextFunction) => {
         cTipElText[i].style.borderRadius = '6px';
         cTipElText[i].style.position = 'fixed';
     }
+
+    let gadgets = document.getElementsByClassName('gadget-inline');
+
+    for (let i = 0; i <= (gadgets.length - 1); i++) {
+        gadgets[i].style.height = 'auto';
+    }
+
     nextFunction();
 }
 
